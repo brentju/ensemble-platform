@@ -1,26 +1,71 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
+/* Theme: Ensemble luxury tech style */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FAFAF9; /* off-white */
+  --foreground: #2D3748; /* cool slate blue (dark) */
 }
 
 @theme inline {
+  /* Color palette */
+  --color-offwhite: #FAFAF9;
+  --color-slate-700: #4A5568; /* cool slate blue */
+  --color-slate-800: #2D3748; /* deeper slate */
+  --color-tan-200: #E7C1AB; /* warm tan accent (light) */
+  --color-tan-300: #D8B490; /* warm tan accent */
+  --color-tan-500: #BD8665; /* warm tan accent (deep) */
+
+  /* Surface tokens */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* Typography (set via next/font variables) */
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Glassmorphism utility */
+.glass {
+  @apply backdrop-blur-md bg-white/20 border border-white/30;
 }
 
+/* Accent + elevation utilities */
+.accent-ring {
+  @apply ring-1 ring-slate-800/10 border-2 border-tan-500;
+}
+.elevate {
+  box-shadow: 0 8px 24px rgba(45,55,72,0.06), 0 32px 88px rgba(189,134,101,0.16);
+}
+.elevate-hover:hover {
+  box-shadow: 0 12px 32px rgba(45,55,72,0.08), 0 40px 120px rgba(189,134,101,0.22);
+}
+
+/* Shimmer focus effect */
+@keyframes shimmerBorder {
+  0% { box-shadow: 0 0 0 0 rgba(216, 180, 144, 0.0); }
+  50% { box-shadow: 0 0 0 3px rgba(216, 180, 144, 0.35), 0 10px 30px rgba(189, 134, 101, 0.18); }
+  100% { box-shadow: 0 0 0 0 rgba(216, 180, 144, 0.0); }
+}
+.shimmer-focus:focus {
+  animation: shimmerBorder 1.2s ease-out;
+}
+
+/* Base styles */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Background gradient slow loop */
+@keyframes bgloop {
+  0% { transform: translate3d(0,0,0) scale(1); opacity: 0.9; }
+  50% { transform: translate3d(0,-2%,0) scale(1.02); opacity: 1; }
+  100% { transform: translate3d(0,0,0) scale(1); opacity: 0.9; }
+}
+
+/* Liquid glass panel for article bodies */
+.liquid-glass {
+  @apply backdrop-blur-xl bg-white/25 border border-white/30;
+  box-shadow: 0 16px 60px rgba(189,134,101,0.12), 0 8px 24px rgba(45,55,72,0.08);
 }
