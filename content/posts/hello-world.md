@@ -25,7 +25,7 @@ In recent months we’ve seen groundbreaking research that shows (1) LLMs can re
 
 We’re focusing on this because we personally face this problem everyday at work, as do countless other developers. 
 
-Brian scaled user facing interfaces to thousands (while optimizing for military-grade security and latencies) and researched at Stanford’s HCI lab. Brent has worked at companies ranging from early stage startups to well-established names in big tech, most recently building AI agents at Google. **We’re confident we’re the team to build this.**
+Brian scaled user facing interfaces to thousands (while optimizing for military-grade security and latencies) and researched at Stanford’s HCI lab. Brent has worked at companies ranging from early stage startups to well-established names in big tech, most recently building AI agents at Google. 
 
 
 

@@ -19,15 +19,28 @@ function CameraParallax({ mouseX, mouseY }: { mouseX: number; mouseY: number }) 
 }
 
 function CentralSphere() {
-  const mat = useMemo(() => new THREE.MeshPhysicalMaterial({
-    color: new THREE.Color("#BD8665"),
-    emissive: new THREE.Color("#E7C1AB"),
-    emissiveIntensity: 0.2,
-    roughness: 0.6,
-    metalness: 0.1,
-    transparent: true,
-    opacity: 0.95,
-  }), []);
+  const mat = useMemo(
+  () =>
+    new THREE.MeshPhysicalMaterial({
+      color: new THREE.Color("#00b4d8"),     // keep it neutral; color comes from refraction
+      transmission: 1.0,                     // full glass-like transmission
+      thickness: 2.5,                        // deeper internal refraction for an orb
+      ior: 1.45,                             // typical glass/crystal IOR
+      roughness: 0.02,                       // very smooth surface
+      metalness: 0.0,
+      clearcoat: 1.0,                        // glossy outer layer
+      clearcoatRoughness: 0.03,
+      reflectivity: 2.0,                     // boosts reflection sharpness
+      attenuationColor: new THREE.Color("#00b4d8"), // subtle blue tint for crystal feel
+      attenuationDistance: 1.75,             // controls how far light travels inside
+      envMapIntensity: 2.0,                  // stronger environment reflection
+      transparent: true,
+      opacity: 1.0,
+      side: THREE.DoubleSide,                // avoid dark backfaces in refraction
+    }),
+  []
+);
+
   return (
     <mesh>
       <sphereGeometry args={[0.6, 48, 48]} />
@@ -145,7 +158,7 @@ export default function BackgroundOrbits() {
 
   return (
     <div className="absolute inset-0 pointer-events-none">
-      <Canvas dpr={[1, 1.5]} camera={{ position: [0, 0, 6], fov: 50 }}>
+      <Canvas dpr={[1, 1.5]} gl={{ alpha: true }} camera={{ position: [0, 0, 6], fov: 50 }}>
         {/* Transparent canvas; background gradient shows through */}
         <Scene mouseX={mouse.current.x} mouseY={mouse.current.y} />
       </Canvas>
