@@ -123,7 +123,7 @@ export default function HowItWorks() {
             className="absolute inset-0 flex items-center justify-center will-change-transform"
             style={{ zIndex: steps.length - i }}
           >
-            <div className="hiw-card glass mx-auto w-full max-w-7xl rounded-2xl px-6 py-16 md:px-10 md:py-20">
+            <div className="hiw-card glass mx-auto max-w-7xl rounded-2xl px-6 py-16 md:px-10 md:py-20">
               <div className="w-10 h-10 mb-5">
                 <OrbitIcon />
               </div>

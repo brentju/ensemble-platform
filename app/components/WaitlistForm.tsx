@@ -100,7 +100,7 @@ export default function WaitlistForm() {
                 <span className="text-slate-800">✓</span>
               </motion.div>
               <h3 className="font-serif text-2xl text-slate-800">Thanks for your interest!</h3>
-              <p className="mt-2 text-slate-700">Well reach out as we expand access.</p>
+              <p className="mt-2 text-slate-700">We'll reach out as we expand access.</p>
             </motion.div>
           ) : (
             <motion.form
