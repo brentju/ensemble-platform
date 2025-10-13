@@ -22,17 +22,17 @@ function CentralSphere() {
   const mat = useMemo(
   () =>
     new THREE.MeshPhysicalMaterial({
-      color: new THREE.Color("#00b4d8"),     // keep it neutral; color comes from refraction
+      color: new THREE.Color('lightblue'),     // keep it neutral; color comes from refraction
       transmission: 1.0,                     // full glass-like transmission
-      thickness: 2.5,                        // deeper internal refraction for an orb
+      thickness: 4.5,                        // deeper internal refraction for an orb
       ior: 1.45,                             // typical glass/crystal IOR
       roughness: 0.02,                       // very smooth surface
       metalness: 0.0,
-      clearcoat: 1.0,                        // glossy outer layer
+      clearcoat: 1,                        // glossy outer layer
       clearcoatRoughness: 0.03,
-      reflectivity: 2.0,                     // boosts reflection sharpness
-      attenuationColor: new THREE.Color("#00b4d8"), // subtle blue tint for crystal feel
-      attenuationDistance: 1.75,             // controls how far light travels inside
+      reflectivity: 1,                     // boosts reflection sharpness
+      attenuationColor: new THREE.Color('lightblue'), // subtle blue tint for crystal feel
+      attenuationDistance: 2.75,             // controls how far light travels inside
       envMapIntensity: 2.0,                  // stronger environment reflection
       transparent: true,
       opacity: 1.0,
