@@ -180,13 +180,13 @@ export default function Hero() {
             style={{ x, y }}
             className="font-serif text-4xl md:text-6xl tracking-tight max-w-4xl"
           >
-            Redefining Product Development with Ensemble
+            Redefine Product Development with Ensemble.
           </motion.h1>
           <motion.p
             style={{ x, y }}
             className="mt-6 text-slate-700 text-lg md:text-xl max-w-2xl"
           >
-            AI agents that behave like real people. Instant, reliable, continuous product feedback.
+            AI agents that behave like real people. Instant, reliable, continuous product feedback for developers and engineers.
           </motion.p>
           <div className="mt-8">
             <motion.a
