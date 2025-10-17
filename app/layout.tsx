@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description: "AI agents for instant, reliable product feedback.",
   metadataBase: new URL("https://try-ensemble.vercel.app"),
   icons: {
-    icon: "/ensemble.png",
+    icon: "https://try-ensemble.vercel.app/ensemble-og.png",
   },
   openGraph: {
     title: "Ensemble",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     url: "https://try-ensemble.vercel.app",
     siteName: "Ensemble",
     images: [
-      { url: "/ensemble-og.png", width: 1200, height: 630, alt: "Ensemble" },
+      { url: "https://try-ensemble.vercel.app/ensemble-og.png", width: 1200, height: 630, alt: "Ensemble" },
     ],
     type: "website",
   },
