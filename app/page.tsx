@@ -13,7 +13,7 @@ export default function Home() {
       <Hero />
 
       {/* Problem / Solution */}
-      <section data-animate="reveal" className="mx-auto max-w-7xl px-6 py-20 md:py-28">
+      <section className="mx-auto max-w-7xl px-6 py-20 md:py-28">
         <div className="max-w-3xl">
           <h2 className="font-serif text-3xl md:text-4xl">The Problem</h2>
           <ul className="mt-6 space-y-2 text-slate-700">

@@ -28,6 +28,8 @@
 /* Glassmorphism utility */
 .glass {
   @apply backdrop-blur-md bg-white/20 border border-white/30;
+  will-change: filter;
+  transform: translateZ(0);
 }
 
 /* Accent + elevation utilities */
