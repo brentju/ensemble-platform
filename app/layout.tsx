@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     url: "https://try-ensemble.vercel.app",
     siteName: "Ensemble",
     images: [
-      { url: "/ensemble.png", width: 1200, height: 630, alt: "Ensemble" },
+      { url: "/ensemble-og.png", width: 1200, height: 630, alt: "Ensemble" },
     ],
     type: "website",
   },
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ensemble",
     description: "AI agents for instant, reliable product feedback.",
-    images: ["/ensemble.png"],
+    images: ["/ensemble-og.png"],
   },
 };
 
