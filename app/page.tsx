@@ -14,7 +14,7 @@ export default function Home() {
 
       {/* Problem / Solution */}
       <section className="mx-auto max-w-7xl px-6 py-20 md:py-28">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl mb-28">
           <h2 className="font-serif text-3xl md:text-4xl">The Problem</h2>
           <ul className="mt-6 space-y-2 text-slate-700">
             <li>Today, product testing is slow, expensive, and siloed.</li>
@@ -22,7 +22,7 @@ export default function Home() {
           </ul>
         </div>
 
-        <div className="mt-12">
+        <div className="mt-28">
           <h3 className="font-serif text-2xl md:text-3xl">Our solution highlights</h3>
           <SolutionGrid />
         </div>
