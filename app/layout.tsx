@@ -19,18 +19,18 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Ensemble",
-  description: "A minimal, luxury-tech platform experience by Ensemble.",
-  metadataBase: new URL("https://ensemble.example.com"),
+  description: "AI agents for instant, reliable product feedback.",
+  metadataBase: new URL("https://try-ensemble.vercel.app"),
   icons: {
-    icon: "/favicon.ico",
+    icon: "/ensemble.png",
   },
   openGraph: {
     title: "Ensemble",
     description: "AI agents for instant, reliable product feedback.",
-    url: "https://ensemble.example.com",
+    url: "https://try-ensemble.vercel.app",
     siteName: "Ensemble",
     images: [
-      { url: "/vercel.svg", width: 1200, height: 630, alt: "Ensemble" },
+      { url: "/ensemble.png", width: 1200, height: 630, alt: "Ensemble" },
     ],
     type: "website",
   },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ensemble",
     description: "AI agents for instant, reliable product feedback.",
-    images: ["/vercel.svg"],
+    images: ["/ensemble.png"],
   },
 };
 
