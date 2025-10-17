@@ -61,14 +61,14 @@ export default function HorizontalFeatures() {
   ];
 
   return (
-    <section id="features" className="relative w-full bg-offwhite py-20 md:py-28">
+    <section id="features" className="relative w-full py-20 md:py-28">
       <div className="mx-auto max-w-7xl px-6">
         <h2 className="font-serif text-3xl md:text-4xl mb-8">Features</h2>
       </div>
       <div ref={containerRef} className="relative w-full overflow-hidden">
         {/* Edge fades for a cinematic slider feel */}
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-offwhite to-transparent z-10" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-offwhite to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-transparent to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-transparent to-transparent z-10" />
 
         <div ref={trackRef} className="flex gap-6 px-6 py-4 will-change-transform select-none">
           {/* Group A */}

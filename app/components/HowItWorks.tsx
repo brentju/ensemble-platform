@@ -101,10 +101,10 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="how" className="relative w-full bg-offwhite pt-24 md:pt-28">
+    <section id="how" className="relative w-full pt-24 md:pt-28">
       <div ref={containerRef} className="relative h-[100svh] w-full perspective-[1200px] overflow-hidden">
         {/* Fixed heading and progress dots while pinned */}
-        <div className="pointer-events-none absolute left-0 right-0 flex items-center justify-between px-6 z-20 top-20 md:top-24">
+        <div className="pointer-events-none absolute left-0 right-0 flex items-center justify-between px-6 z-20 top-20 md:top-24 mx-auto max-w-7xl">
           <h2 className="pointer-events-none font-serif text-2xl md:text-3xl">How it works</h2>
           <div className="flex items-center gap-2">
             {steps.map((_, i) => (
@@ -123,7 +123,7 @@ export default function HowItWorks() {
             className="absolute inset-0 flex items-center justify-center will-change-transform"
             style={{ zIndex: steps.length - i }}
           >
-            <div className="hiw-card glass mx-auto max-w-7xl rounded-2xl px-6 py-16 md:px-10 md:py-20">
+            <div className="hiw-card mx-auto max-w-7xl rounded-2xl px-6 py-16 md:px-10 md:py-20 bg-offwhite">
               <div className="w-10 h-10 mb-5">
                 <OrbitIcon />
               </div>
