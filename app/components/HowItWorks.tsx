@@ -41,7 +41,7 @@ export default function HowItWorks() {
       );
 
       const tl = gsap.timeline({
-        defaults: { ease: "power2.inOut", duration: 0.6 },
+        defaults: { ease: "power2.inOut", duration: 0.1 },
         scrollTrigger: {
           trigger: container,
           start: "top top",
