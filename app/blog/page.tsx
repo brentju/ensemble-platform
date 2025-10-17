@@ -47,7 +47,7 @@ export default function BlogPage() {
     <div className="relative">
       {/* Subtle background animation */}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-tan-200/10 via-transparent to-transparent animate-[pulse_6s_ease-in-out_infinite]" />
-      <div className="relative mx-auto max-w-7xl px-6 py-24">
+      <div className="relative mx-auto h-screen max-w-7xl px-6 py-24">
         <h1 className="font-serif text-4xl md:text-5xl tracking-tight">Our Blog</h1>
         <p className="mt-6 text-slate-700 max-w-2xl">Thoughts on building quiet, enduring systems.</p>
         <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

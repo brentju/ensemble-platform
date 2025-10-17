@@ -76,11 +76,11 @@ export default function RootLayout({
 
         {/* Main content */}
         <Providers>
-          <main>{children}</main>
+          <main className="flex-1">{children}</main>
         </Providers>
 
         {/* Footer */}
-        <footer className="mt-24">
+        <footer>
           <div className="glass">
             <div className="mx-auto max-w-7xl px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
               <p className="text-sm">© {new Date().getFullYear()} Ensemble. All rights reserved.</p>
