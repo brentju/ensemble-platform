@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ensemble",
     description: "AI agents for instant, reliable product feedback.",
-    images: ["/ensemble-og.png"],
+    images: ["https://try-ensemble.vercel.app/ensemble-og.png"],
   },
 };
 
