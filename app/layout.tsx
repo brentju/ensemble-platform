@@ -88,8 +88,6 @@ export default function RootLayout({
               <div className="flex items-center gap-6 text-sm">
                 <a href="/blog" className="hover:opacity-80">Blog</a>
                 <a href="/contact" className="hover:opacity-80">Contact</a>
-                <a href="#" className="hover:opacity-80">Privacy</a>
-                <a href="#" className="hover:opacity-80">Terms</a>
               </div>
             </div>
           </div>
